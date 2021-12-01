@@ -200,7 +200,7 @@
     <div class="head-info">
       <span class="post-info-item"><i class="iconfont iconcalendar"></i>十一月 18, 2021</span>
       
-      <span class="post-info-item"><i class="iconfont iconfont-size"></i>1641</span>
+      <span class="post-info-item"><i class="iconfont iconfont-size"></i>1748</span>
     </div>
   </div>
 </section>
@@ -217,10 +217,10 @@
 <h2 id="hexo常见报错"><a href="#hexo常见报错" class="headerlink" title="hexo常见报错"></a>hexo常见报错</h2><ul>
 <li>git clone 过程中出现<code>fatal: unable to access &#39;https://github.com/GGICE/hexo-icer.git/&#39;: Failed to connect to github.com port 443 after 21038 ms: Timed out</code></li>
 </ul>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --local http.proxy 127.0.0.1:1080      --为某个 git 项目单独设置代理</span><br><span class="line">git config --global http.proxy 127.0.0.1:1080     --为全局的 git 项目都设置代理</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global --unset http.proxy      --取消全局代理</span><br><span class="line">git config --global --unset https.proxy     --取消全局代理</span><br></pre></td></tr></table></figure>
 
 <p>其他常用指令</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">git config --global http.proxy                     --查看是否设置代理</span><br><span class="line"></span><br><span class="line">git config --global http.proxy                     --设置取消代理</span><br><span class="line">git config --global --unset http.proxy</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">git config --global http.proxy                     --查看是否设置代理</span><br><span class="line"></span><br><span class="line">git config --local http.proxy 127.0.0.1:1080      --为某个 git 项目单独设置代理</span><br><span class="line">git config --global http.proxy 127.0.0.1:1080     --为全局的 git 项目都设置代理</span><br><span class="line"></span><br><span class="line">git config --global http.proxy                     --设置取消代理</span><br><span class="line">git config --global --unset http.proxy</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
 <ul>
 <li>找不到git部署 <code>ERROR Deployer not found: git</code></li>
